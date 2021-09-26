@@ -1,0 +1,58 @@
+"" General Vim settings
+let mapleader=","
+
+"" highlighting
+syntax on
+
+"" spacing options
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+"" line numbers
+set relativenumber 
+set number
+
+"" search options
+set hlsearch
+set incsearch
+
+" keep search term in the middle of vim buffer
+nnoremap n :norm! nzzzv<CR>
+nnoremap N :norm! Nzzzv<CR>
+
+" mouse options
+"	set mouse=a
+
+"" File and Window Management 
+" change split
+noremap <leader><leader> <C-W><C-W>
+
+" save
+inoremap <leader>w <Esc>:w<CR>
+nnoremap <leader>w :w<CR>
+
+" quit
+inoremap <leader>q <ESC>:q<CR>
+nnoremap <leader>q :q<CR>
+
+" save & quit
+inoremap <leader>x <ESC>:x<CR>
+nnoremap <leader>x :x<CR>
+
+" tab control
+nnoremap <leader>e :Ex<CR>
+nnoremap <leader>t :tabnew<CR>:Ex<CR>
+nnoremap <leader>r :tabn<CR>
+nnoremap <leader>v :vsplit<CR>:w<CR><C-W><C-W>:Ex<CR>
+nnoremap <leader>s :split<CR>:w<CR><C-W><C-W>:Ex<CR>
+
+"" Return to the same line you left off at
+augroup line_return
+	au!
+	au BufReadPost *
+		\ if line("'\"") > 0 && line("'\"") <= line("$") |
+		\	execute 'normal! g`"zvzz' |
+		\ endif
+augroup END

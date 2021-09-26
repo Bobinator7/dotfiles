@@ -1,0 +1,5 @@
+xterm*faceName: DejaVu Sans Mono
+xterm*faceSize: 9
+xterm*termName: xterm-256color
+xterm*foreground: grey
+xterm*background: black

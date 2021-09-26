@@ -1,0 +1,5 @@
+# custom cd
+function c(){
+	builtin cd "$@" && ls
+}
+alias cd="c"

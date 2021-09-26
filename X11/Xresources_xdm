@@ -1,0 +1,17 @@
+xlogin*greeting: 
+xlogin*unsecureGreeting:
+xlogin*fail: Fail!
+xlogin*changePasswdMessage: Fail!
+xlogin*namePrompt: Username:
+xlogin*passwdPrompt: Password:
+xlogin*echoPasswd: true
+xlogin*background: black
+xlogin*foreground: white
+xlogin*failColor: #cccccc
+xlogin*inpColor: black
+xlogin*promptColor: #aaaaaa
+xlogin*face: courier:size=13:style=Bold
+xlogin*failFace: courier:size=13:style=Bold
+xlogin*promptFace: courier:size=13:style=Normal
+xlogin*greetFace: courier:size=13
+xlogin*width: 400

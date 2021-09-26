@@ -1,0 +1,3 @@
+Host git.rwth-aachen.de
+    Preferredauthentications publickey    
+    IdentityFile ~/.ssh/workid_rsa
